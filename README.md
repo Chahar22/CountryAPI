@@ -30,7 +30,9 @@ GET http://localhost:3000/Allcountries/{name} => Return data of specific conutry
 ## Run locally
 
 cd backend
+
 npm start
+
 service is live by default on PORT 3000.
 
 
