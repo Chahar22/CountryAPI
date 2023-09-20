@@ -1,0 +1,25 @@
+GET http://localhost:3000/Allcountries
+Authorization: Bearer {replace with token generated}
+
+###
+
+GET http://localhost:3000/countries?sort=desc&basis=area&language=eng
+Authorization: Bearer {replace with token generated}
+
+###
+
+GET http://localhost:3000/Allcountries/Russia
+Authorization: Bearer {replace with token generated}
+
+###
+
+POST http://localhost:3000/user/register
+Content-Type: application/json
+  
+{   
+    "_id": 1,
+    "email": "Shishupal@gmail.com",
+    "password": "1234"
+}
+
+
