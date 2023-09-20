@@ -14,7 +14,7 @@
 
 POST http://localhost:3000/user/register
 
-1. Register a user with datails {_id , name , passsword}.
+1. Register a user with datails {\_id , name , passsword}.
 2. Datails of a user are stored in CODE ITSELF in User variable.
 3. Token is generated which is used for authorization.
 4. Authorisation is checked for every endpoint in the application.
@@ -27,6 +27,18 @@ GET http://localhost:3000/ => Return data of all countries fetched from the give
 
 GET http://localhost:3000/Allcountries/{name} => Return data of specific conutry.(Eg :- http://localhost:3000/Allcountries/Russia)
 
+GET http://localhost:3000/countries?sort=desc&basis=area&language=eng => Return countries Name as per your requirements.
+
+It has { populationMin,
+populationMax,
+areaMin,
+areaMax,
+language,
+sort,
+basis,} parameters.
+
+Customize as per your requirements
+
 ## Run locally
 
 cd backend
@@ -34,7 +46,6 @@ cd backend
 npm start
 
 service is live by default on PORT 3000.
-
 
 ## How to Use
 
